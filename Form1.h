@@ -62,6 +62,7 @@ namespace CppCLRWinFormsProject
 	private: System::Windows::Forms::ComboBox^ cmbHora;
 	private: System::Windows::Forms::DataGridView^ dataGridView1;
 	private: System::Windows::Forms::Label^ lblLimiteCr;
+	private: System::Windows::Forms::TextBox^ txtCarrera;
 
 
 
@@ -97,13 +98,14 @@ namespace CppCLRWinFormsProject
 			this->cmbHora = (gcnew System::Windows::Forms::ComboBox());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->lblLimiteCr = (gcnew System::Windows::Forms::Label());
+			this->txtCarrera = (gcnew System::Windows::Forms::TextBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgvMaterias))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// btnInsertar
 			// 
-			this->btnInsertar->Location = System::Drawing::Point(12, 183);
+			this->btnInsertar->Location = System::Drawing::Point(759, 12);
 			this->btnInsertar->Name = L"btnInsertar";
 			this->btnInsertar->Size = System::Drawing::Size(128, 54);
 			this->btnInsertar->TabIndex = 0;
@@ -117,20 +119,22 @@ namespace CppCLRWinFormsProject
 			this->dgvMaterias->AllowUserToDeleteRows = false;
 			this->dgvMaterias->AllowUserToResizeColumns = false;
 			this->dgvMaterias->AllowUserToResizeRows = false;
+			this->dgvMaterias->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left));
 			this->dgvMaterias->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
 			this->dgvMaterias->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dgvMaterias->Location = System::Drawing::Point(12, 294);
+			this->dgvMaterias->Location = System::Drawing::Point(12, 12);
 			this->dgvMaterias->MultiSelect = false;
 			this->dgvMaterias->Name = L"dgvMaterias";
 			this->dgvMaterias->ReadOnly = true;
 			this->dgvMaterias->SelectionMode = System::Windows::Forms::DataGridViewSelectionMode::FullRowSelect;
-			this->dgvMaterias->Size = System::Drawing::Size(530, 347);
+			this->dgvMaterias->Size = System::Drawing::Size(658, 526);
 			this->dgvMaterias->TabIndex = 1;
 			this->dgvMaterias->SelectionChanged += gcnew System::EventHandler(this, &Form1::dgvMaterias_SelectionChanged);
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(146, 183);
+			this->button2->Location = System::Drawing::Point(893, 12);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(128, 54);
 			this->button2->TabIndex = 2;
@@ -139,7 +143,7 @@ namespace CppCLRWinFormsProject
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(280, 183);
+			this->button3->Location = System::Drawing::Point(1027, 12);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(128, 54);
 			this->button3->TabIndex = 3;
@@ -148,7 +152,7 @@ namespace CppCLRWinFormsProject
 			// 
 			// button4
 			// 
-			this->button4->Location = System::Drawing::Point(414, 183);
+			this->button4->Location = System::Drawing::Point(1161, 12);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(128, 54);
 			this->button4->TabIndex = 4;
@@ -157,7 +161,7 @@ namespace CppCLRWinFormsProject
 			// 
 			// btnAgregar
 			// 
-			this->btnAgregar->Location = System::Drawing::Point(609, 597);
+			this->btnAgregar->Location = System::Drawing::Point(784, 587);
 			this->btnAgregar->Name = L"btnAgregar";
 			this->btnAgregar->Size = System::Drawing::Size(75, 23);
 			this->btnAgregar->TabIndex = 5;
@@ -166,33 +170,36 @@ namespace CppCLRWinFormsProject
 			// 
 			// txtCodigo
 			// 
-			this->txtCodigo->Location = System::Drawing::Point(584, 310);
+			this->txtCodigo->Location = System::Drawing::Point(12, 600);
 			this->txtCodigo->Name = L"txtCodigo";
 			this->txtCodigo->ReadOnly = true;
 			this->txtCodigo->Size = System::Drawing::Size(121, 20);
 			this->txtCodigo->TabIndex = 8;
+			this->txtCodigo->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
 			// txtMateria
 			// 
-			this->txtMateria->Location = System::Drawing::Point(584, 373);
+			this->txtMateria->Location = System::Drawing::Point(175, 600);
 			this->txtMateria->Name = L"txtMateria";
 			this->txtMateria->ReadOnly = true;
 			this->txtMateria->Size = System::Drawing::Size(121, 20);
 			this->txtMateria->TabIndex = 9;
+			this->txtMateria->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
 			// txtCreditos
 			// 
-			this->txtCreditos->Location = System::Drawing::Point(584, 431);
+			this->txtCreditos->Location = System::Drawing::Point(346, 600);
 			this->txtCreditos->Name = L"txtCreditos";
 			this->txtCreditos->ReadOnly = true;
 			this->txtCreditos->Size = System::Drawing::Size(121, 20);
 			this->txtCreditos->TabIndex = 10;
+			this->txtCreditos->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
 			// cmbDia
 			// 
 			this->cmbDia->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->cmbDia->FormattingEnabled = true;
-			this->cmbDia->Location = System::Drawing::Point(584, 492);
+			this->cmbDia->Location = System::Drawing::Point(759, 482);
 			this->cmbDia->Name = L"cmbDia";
 			this->cmbDia->Size = System::Drawing::Size(121, 21);
 			this->cmbDia->TabIndex = 11;
@@ -201,7 +208,7 @@ namespace CppCLRWinFormsProject
 			// 
 			this->cmbHora->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->cmbHora->FormattingEnabled = true;
-			this->cmbHora->Location = System::Drawing::Point(584, 547);
+			this->cmbHora->Location = System::Drawing::Point(759, 537);
 			this->cmbHora->Name = L"cmbHora";
 			this->cmbHora->Size = System::Drawing::Size(121, 21);
 			this->cmbHora->TabIndex = 12;
@@ -210,7 +217,7 @@ namespace CppCLRWinFormsProject
 			// 
 			this->dataGridView1->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Location = System::Drawing::Point(757, 294);
+			this->dataGridView1->Location = System::Drawing::Point(759, 72);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->Size = System::Drawing::Size(530, 347);
 			this->dataGridView1->TabIndex = 13;
@@ -218,17 +225,27 @@ namespace CppCLRWinFormsProject
 			// lblLimiteCr
 			// 
 			this->lblLimiteCr->AutoSize = true;
-			this->lblLimiteCr->Location = System::Drawing::Point(12, 278);
+			this->lblLimiteCr->Location = System::Drawing::Point(962, 525);
 			this->lblLimiteCr->Name = L"lblLimiteCr";
 			this->lblLimiteCr->Size = System::Drawing::Size(35, 13);
 			this->lblLimiteCr->TabIndex = 14;
 			this->lblLimiteCr->Text = L"label1";
+			// 
+			// txtCarrera
+			// 
+			this->txtCarrera->Location = System::Drawing::Point(523, 600);
+			this->txtCarrera->Name = L"txtCarrera";
+			this->txtCarrera->ReadOnly = true;
+			this->txtCarrera->Size = System::Drawing::Size(121, 20);
+			this->txtCarrera->TabIndex = 15;
+			this->txtCarrera->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1299, 653);
+			this->Controls->Add(this->txtCarrera);
 			this->Controls->Add(this->lblLimiteCr);
 			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->cmbHora);
@@ -279,11 +296,7 @@ namespace CppCLRWinFormsProject
 		btnInsertar->Enabled = false;
 	}
 	private: System::Void dgvMaterias_SelectionChanged(System::Object^ sender, System::EventArgs^ e)
-	{
-		txtCodigo->Text = "";
-		txtCreditos->Text = "";
-		txtMateria->Text = "";
-
+	{		
 		if (dgvMaterias->SelectedRows->Count > 0)
 		{
 			txtCodigo->Text = dgvMaterias->SelectedRows[0]->Cells["codigo"]->Value->ToString();
@@ -297,6 +310,11 @@ namespace CppCLRWinFormsProject
 		if (dgvMaterias->SelectedRows->Count > 0)
 		{
 			txtMateria->Text = dgvMaterias->SelectedRows[0]->Cells["materia"]->Value->ToString();
+		}
+
+		if (dgvMaterias->SelectedRows->Count > 0)
+		{
+			txtCarrera->Text = dgvMaterias->SelectedRows[0]->Cells["carrera"]->Value->ToString();
 		}
 	}
 	};
