@@ -121,6 +121,7 @@ namespace CppCLRWinFormsProject
 			// 
 			// btnInsertar
 			// 
+			this->btnInsertar->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->btnInsertar->Location = System::Drawing::Point(759, 12);
 			this->btnInsertar->Name = L"btnInsertar";
 			this->btnInsertar->Size = System::Drawing::Size(128, 54);
@@ -150,6 +151,7 @@ namespace CppCLRWinFormsProject
 			// 
 			// button2
 			// 
+			this->button2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->button2->Location = System::Drawing::Point(893, 12);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(128, 54);
@@ -159,6 +161,7 @@ namespace CppCLRWinFormsProject
 			// 
 			// button3
 			// 
+			this->button3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->button3->Location = System::Drawing::Point(1027, 12);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(128, 54);
@@ -168,6 +171,7 @@ namespace CppCLRWinFormsProject
 			// 
 			// button4
 			// 
+			this->button4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->button4->Location = System::Drawing::Point(1161, 12);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(128, 54);
@@ -263,6 +267,8 @@ namespace CppCLRWinFormsProject
 			// 
 			// panel1
 			// 
+			this->panel1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->panel1->AutoScroll = true;
 			this->panel1->Controls->Add(this->listBox6);
 			this->panel1->Controls->Add(this->listBox5);
