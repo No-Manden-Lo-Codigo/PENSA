@@ -60,9 +60,18 @@ namespace CppCLRWinFormsProject
 	private: System::Windows::Forms::TextBox^ txtCreditos;
 	private: System::Windows::Forms::ComboBox^ cmbDia;
 	private: System::Windows::Forms::ComboBox^ cmbHora;
-	private: System::Windows::Forms::DataGridView^ dataGridView1;
-	private: System::Windows::Forms::Label^ lblLimiteCr;
+
+
 	private: System::Windows::Forms::TextBox^ txtCarrera;
+	private: System::Windows::Forms::TextBox^ textBox1;
+	private: System::Windows::Forms::Button^ btnBusqueda;
+	private: System::Windows::Forms::Panel^ panel1;
+	private: System::Windows::Forms::ListBox^ listBox1;
+	private: System::Windows::Forms::ListBox^ listBox6;
+	private: System::Windows::Forms::ListBox^ listBox5;
+	private: System::Windows::Forms::ListBox^ listBox4;
+	private: System::Windows::Forms::ListBox^ listBox3;
+	private: System::Windows::Forms::ListBox^ listBox2;
 
 
 
@@ -96,11 +105,18 @@ namespace CppCLRWinFormsProject
 			this->txtCreditos = (gcnew System::Windows::Forms::TextBox());
 			this->cmbDia = (gcnew System::Windows::Forms::ComboBox());
 			this->cmbHora = (gcnew System::Windows::Forms::ComboBox());
-			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
-			this->lblLimiteCr = (gcnew System::Windows::Forms::Label());
 			this->txtCarrera = (gcnew System::Windows::Forms::TextBox());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->btnBusqueda = (gcnew System::Windows::Forms::Button());
+			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->listBox1 = (gcnew System::Windows::Forms::ListBox());
+			this->listBox2 = (gcnew System::Windows::Forms::ListBox());
+			this->listBox3 = (gcnew System::Windows::Forms::ListBox());
+			this->listBox4 = (gcnew System::Windows::Forms::ListBox());
+			this->listBox5 = (gcnew System::Windows::Forms::ListBox());
+			this->listBox6 = (gcnew System::Windows::Forms::ListBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgvMaterias))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
+			this->panel1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// btnInsertar
@@ -123,12 +139,12 @@ namespace CppCLRWinFormsProject
 				| System::Windows::Forms::AnchorStyles::Left));
 			this->dgvMaterias->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
 			this->dgvMaterias->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dgvMaterias->Location = System::Drawing::Point(12, 12);
+			this->dgvMaterias->Location = System::Drawing::Point(12, 54);
 			this->dgvMaterias->MultiSelect = false;
 			this->dgvMaterias->Name = L"dgvMaterias";
 			this->dgvMaterias->ReadOnly = true;
 			this->dgvMaterias->SelectionMode = System::Windows::Forms::DataGridViewSelectionMode::FullRowSelect;
-			this->dgvMaterias->Size = System::Drawing::Size(658, 526);
+			this->dgvMaterias->Size = System::Drawing::Size(658, 443);
 			this->dgvMaterias->TabIndex = 1;
 			this->dgvMaterias->SelectionChanged += gcnew System::EventHandler(this, &Form1::dgvMaterias_SelectionChanged);
 			// 
@@ -161,16 +177,18 @@ namespace CppCLRWinFormsProject
 			// 
 			// btnAgregar
 			// 
-			this->btnAgregar->Location = System::Drawing::Point(784, 587);
+			this->btnAgregar->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
+			this->btnAgregar->Location = System::Drawing::Point(1205, 516);
 			this->btnAgregar->Name = L"btnAgregar";
 			this->btnAgregar->Size = System::Drawing::Size(75, 23);
 			this->btnAgregar->TabIndex = 5;
-			this->btnAgregar->Text = L"Add";
+			this->btnAgregar->Text = L"Agregar";
 			this->btnAgregar->UseVisualStyleBackColor = true;
 			// 
 			// txtCodigo
 			// 
-			this->txtCodigo->Location = System::Drawing::Point(12, 600);
+			this->txtCodigo->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->txtCodigo->Location = System::Drawing::Point(12, 517);
 			this->txtCodigo->Name = L"txtCodigo";
 			this->txtCodigo->ReadOnly = true;
 			this->txtCodigo->Size = System::Drawing::Size(121, 20);
@@ -179,7 +197,8 @@ namespace CppCLRWinFormsProject
 			// 
 			// txtMateria
 			// 
-			this->txtMateria->Location = System::Drawing::Point(175, 600);
+			this->txtMateria->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->txtMateria->Location = System::Drawing::Point(175, 517);
 			this->txtMateria->Name = L"txtMateria";
 			this->txtMateria->ReadOnly = true;
 			this->txtMateria->Size = System::Drawing::Size(121, 20);
@@ -188,7 +207,8 @@ namespace CppCLRWinFormsProject
 			// 
 			// txtCreditos
 			// 
-			this->txtCreditos->Location = System::Drawing::Point(346, 600);
+			this->txtCreditos->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->txtCreditos->Location = System::Drawing::Point(346, 517);
 			this->txtCreditos->Name = L"txtCreditos";
 			this->txtCreditos->ReadOnly = true;
 			this->txtCreditos->Size = System::Drawing::Size(121, 20);
@@ -197,57 +217,121 @@ namespace CppCLRWinFormsProject
 			// 
 			// cmbDia
 			// 
+			this->cmbDia->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
 			this->cmbDia->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->cmbDia->FormattingEnabled = true;
-			this->cmbDia->Location = System::Drawing::Point(759, 482);
+			this->cmbDia->Location = System::Drawing::Point(803, 516);
 			this->cmbDia->Name = L"cmbDia";
 			this->cmbDia->Size = System::Drawing::Size(121, 21);
 			this->cmbDia->TabIndex = 11;
 			// 
 			// cmbHora
 			// 
+			this->cmbHora->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
 			this->cmbHora->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			this->cmbHora->FormattingEnabled = true;
-			this->cmbHora->Location = System::Drawing::Point(759, 537);
+			this->cmbHora->Location = System::Drawing::Point(1002, 516);
 			this->cmbHora->Name = L"cmbHora";
 			this->cmbHora->Size = System::Drawing::Size(121, 21);
 			this->cmbHora->TabIndex = 12;
 			// 
-			// dataGridView1
-			// 
-			this->dataGridView1->AutoSizeColumnsMode = System::Windows::Forms::DataGridViewAutoSizeColumnsMode::AllCells;
-			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Location = System::Drawing::Point(759, 72);
-			this->dataGridView1->Name = L"dataGridView1";
-			this->dataGridView1->Size = System::Drawing::Size(530, 347);
-			this->dataGridView1->TabIndex = 13;
-			// 
-			// lblLimiteCr
-			// 
-			this->lblLimiteCr->AutoSize = true;
-			this->lblLimiteCr->Location = System::Drawing::Point(962, 525);
-			this->lblLimiteCr->Name = L"lblLimiteCr";
-			this->lblLimiteCr->Size = System::Drawing::Size(35, 13);
-			this->lblLimiteCr->TabIndex = 14;
-			this->lblLimiteCr->Text = L"label1";
-			// 
 			// txtCarrera
 			// 
-			this->txtCarrera->Location = System::Drawing::Point(523, 600);
+			this->txtCarrera->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->txtCarrera->Location = System::Drawing::Point(523, 517);
 			this->txtCarrera->Name = L"txtCarrera";
 			this->txtCarrera->ReadOnly = true;
 			this->txtCarrera->Size = System::Drawing::Size(121, 20);
 			this->txtCarrera->TabIndex = 15;
 			this->txtCarrera->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(12, 28);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(577, 20);
+			this->textBox1->TabIndex = 16;
+			// 
+			// btnBusqueda
+			// 
+			this->btnBusqueda->Location = System::Drawing::Point(595, 25);
+			this->btnBusqueda->Name = L"btnBusqueda";
+			this->btnBusqueda->Size = System::Drawing::Size(75, 23);
+			this->btnBusqueda->TabIndex = 17;
+			this->btnBusqueda->Text = L"Buscar";
+			this->btnBusqueda->UseVisualStyleBackColor = true;
+			// 
+			// panel1
+			// 
+			this->panel1->AutoScroll = true;
+			this->panel1->Controls->Add(this->listBox6);
+			this->panel1->Controls->Add(this->listBox5);
+			this->panel1->Controls->Add(this->listBox4);
+			this->panel1->Controls->Add(this->listBox3);
+			this->panel1->Controls->Add(this->listBox2);
+			this->panel1->Controls->Add(this->listBox1);
+			this->panel1->Location = System::Drawing::Point(759, 92);
+			this->panel1->Name = L"panel1";
+			this->panel1->Size = System::Drawing::Size(543, 383);
+			this->panel1->TabIndex = 18;
+			// 
+			// listBox1
+			// 
+			this->listBox1->FormattingEnabled = true;
+			this->listBox1->Location = System::Drawing::Point(15, 19);
+			this->listBox1->Name = L"listBox1";
+			this->listBox1->Size = System::Drawing::Size(495, 95);
+			this->listBox1->TabIndex = 0;
+			// 
+			// listBox2
+			// 
+			this->listBox2->FormattingEnabled = true;
+			this->listBox2->Location = System::Drawing::Point(15, 143);
+			this->listBox2->Name = L"listBox2";
+			this->listBox2->Size = System::Drawing::Size(495, 95);
+			this->listBox2->TabIndex = 1;
+			// 
+			// listBox3
+			// 
+			this->listBox3->FormattingEnabled = true;
+			this->listBox3->Location = System::Drawing::Point(15, 268);
+			this->listBox3->Name = L"listBox3";
+			this->listBox3->Size = System::Drawing::Size(495, 95);
+			this->listBox3->TabIndex = 2;
+			// 
+			// listBox4
+			// 
+			this->listBox4->FormattingEnabled = true;
+			this->listBox4->Location = System::Drawing::Point(15, 388);
+			this->listBox4->Name = L"listBox4";
+			this->listBox4->Size = System::Drawing::Size(495, 95);
+			this->listBox4->TabIndex = 3;
+			// 
+			// listBox5
+			// 
+			this->listBox5->FormattingEnabled = true;
+			this->listBox5->Location = System::Drawing::Point(15, 507);
+			this->listBox5->Name = L"listBox5";
+			this->listBox5->Size = System::Drawing::Size(495, 95);
+			this->listBox5->TabIndex = 4;
+			// 
+			// listBox6
+			// 
+			this->listBox6->FormattingEnabled = true;
+			this->listBox6->Location = System::Drawing::Point(15, 628);
+			this->listBox6->Name = L"listBox6";
+			this->listBox6->Size = System::Drawing::Size(495, 95);
+			this->listBox6->TabIndex = 5;
+			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1299, 653);
+			this->ClientSize = System::Drawing::Size(1326, 570);
+			this->Controls->Add(this->panel1);
+			this->Controls->Add(this->btnBusqueda);
+			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->txtCarrera);
-			this->Controls->Add(this->lblLimiteCr);
-			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->cmbHora);
 			this->Controls->Add(this->cmbDia);
 			this->Controls->Add(this->txtCreditos);
@@ -263,7 +347,7 @@ namespace CppCLRWinFormsProject
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Form1";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgvMaterias))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
+			this->panel1->ResumeLayout(false);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
