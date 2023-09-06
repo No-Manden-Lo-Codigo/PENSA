@@ -15,15 +15,13 @@ using namespace std;
 
 namespace PENSA {
 
-	
-
-
+	using namespace std;
 	/// <summary>
 	/// Summary for Form1
 	/// </summary>
 	public ref class Form1 : public System::Windows::Forms::Form
-	{
 		
+
 	public:
 		Form1(void)
 		{
@@ -82,15 +80,6 @@ namespace PENSA {
 
 
 
-
-
-
-
-
-
-
-
-
 	private: System::ComponentModel::IContainer^ components;
 
 
@@ -102,9 +91,8 @@ namespace PENSA {
 	protected:
 
 	private:
-		/// <summary>
-		/// Required designer variable.
-		/// </summary>
+=========
+		System::ComponentModel::Container ^components;
 
 
 #pragma region Windows Form Designer generated code
@@ -113,7 +101,6 @@ namespace PENSA {
 		/// the contents of this method with the code editor.
 		/// </summary>
 		void InitializeComponent(void)
-		{
 			this->components = (gcnew System::ComponentModel::Container());
 			this->btnInsertar = (gcnew System::Windows::Forms::Button());
 			this->dgvMaterias = (gcnew System::Windows::Forms::DataGridView());
@@ -169,10 +156,159 @@ namespace PENSA {
 			this->dgvMaterias->TabStop = false;
 			this->dgvMaterias->SelectionChanged += gcnew System::EventHandler(this, &Form1::dgvMaterias_SelectionChanged);
 			// 
+			this->button2->Location = System::Drawing::Point(895, 54);
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
+			this->SuspendLayout();
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(12, 183);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(128, 54);
+			this->button1->TabIndex = 0;
+			this->button1->Text = L"Insert";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
+			// 
+			// dataGridView1
+			// 
+			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView1->Location = System::Drawing::Point(12, 294);
+			this->dataGridView1->Name = L"dataGridView1";
+			this->dataGridView1->Size = System::Drawing::Size(530, 347);
+			this->dataGridView1->TabIndex = 1;
+			// 
 			// button2
 			// 
-			this->button2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
+			this->button2->Location = System::Drawing::Point(146, 183);
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
+			this->SuspendLayout();
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(12, 183);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(128, 54);
+			this->button1->TabIndex = 0;
+			this->button1->Text = L"Insert";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
+			// 
+			// dataGridView1
+			// 
+			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView1->Location = System::Drawing::Point(12, 294);
+			this->dataGridView1->Name = L"dataGridView1";
+			this->dataGridView1->Size = System::Drawing::Size(530, 347);
+			this->dataGridView1->TabIndex = 1;
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(146, 183);
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
+			this->SuspendLayout();
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(12, 183);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(128, 54);
+			this->button1->TabIndex = 0;
+			this->button1->Text = L"Insert";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
+			// 
+			// dataGridView1
+			// 
+			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView1->Location = System::Drawing::Point(12, 294);
+			this->dataGridView1->Name = L"dataGridView1";
+			this->dataGridView1->Size = System::Drawing::Size(530, 347);
+			this->dataGridView1->TabIndex = 1;
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(146, 183);
+>>>>>>>>> Temporary merge branch 2
+=========
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
+			this->SuspendLayout();
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(12, 183);
+			this->listBox5->Dock = System::Windows::Forms::DockStyle::Top;
+			this->listBox5->FormattingEnabled = true;
+			this->listBox5->Location = System::Drawing::Point(0, 276);
+			this->listBox5->Name = L"listBox5";
+			this->listBox5->Size = System::Drawing::Size(530, 69);
+			this->listBox5->TabIndex = 4;
+			// 
+			// dataGridView1
+			// 
+			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView1->Location = System::Drawing::Point(12, 294);
+			this->dataGridView1->Name = L"dataGridView1";
+			this->dataGridView1->Size = System::Drawing::Size(530, 347);
+			this->dataGridView1->TabIndex = 1;
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(146, 183);
+=========
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
+			this->SuspendLayout();
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(12, 183);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(128, 54);
+			this->button1->TabIndex = 0;
+			this->button1->Text = L"Insert";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
+			// 
+			// dataGridView1
+			// 
+			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView1->Location = System::Drawing::Point(12, 294);
+			this->dataGridView1->Name = L"dataGridView1";
+			this->dataGridView1->Size = System::Drawing::Size(530, 347);
+			this->dataGridView1->TabIndex = 1;
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(146, 183);
+>>>>>>>>> Temporary merge branch 2
+			// 
 			this->button2->Location = System::Drawing::Point(895, 54);
+>>>>>>>>> Temporary merge branch 2
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(128, 54);
 			this->button2->TabIndex = 2;
@@ -181,13 +317,38 @@ namespace PENSA {
 			// 
 			// button3
 			// 
-			this->button3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->button3->Location = System::Drawing::Point(1099, 54);
+>>>>>>>>> Temporary merge branch 2
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(128, 54);
 			this->button3->TabIndex = 3;
 			this->button3->Text = L"Update";
 			this->button3->UseVisualStyleBackColor = true;
+			// button4
+			// 
+<<<<<<<<< Temporary merge branch 1
+			this->button4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
+			this->button4->Location = System::Drawing::Point(1161, 12);
+=========
+			this->button4->Location = System::Drawing::Point(414, 183);
+>>>>>>>>> Temporary merge branch 2
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(128, 54);
+			this->button4->TabIndex = 4;
+			this->button4->Text = L"LOL";
+			this->button4->UseVisualStyleBackColor = true;
+			// 
+<<<<<<<<< Temporary merge branch 1
+			// btnAgregar
+			// 
+			this->btnAgregar->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
+			this->btnAgregar->Location = System::Drawing::Point(1205, 516);
+			this->ClientSize = System::Drawing::Size(1264, 681);
+			this->Controls->Add(this->label1);
+			this->btnAgregar->TabIndex = 5;
+			this->btnAgregar->Text = L"Agregar";
+			this->btnAgregar->UseVisualStyleBackColor = true;
+			// 
 			// 
 			// txtCodigo
 			// 
@@ -216,26 +377,7 @@ namespace PENSA {
 			this->txtCreditos->Name = L"txtCreditos";
 			this->txtCreditos->ReadOnly = true;
 			this->txtCreditos->Size = System::Drawing::Size(121, 20);
-			this->txtCreditos->TabIndex = 10;
-			this->txtCreditos->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-			// 
-			// txtCarrera
-			// 
-			this->txtCarrera->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
-			this->txtCarrera->Location = System::Drawing::Point(549, 628);
-			this->txtCarrera->Name = L"txtCarrera";
-			this->txtCarrera->ReadOnly = true;
-			this->txtCarrera->Size = System::Drawing::Size(121, 20);
-			this->txtCarrera->TabIndex = 15;
-			this->txtCarrera->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-			// 
-			// panel1
-			// 
-			this->panel1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->panel1->AutoScroll = true;
-			this->panel1->Controls->Add(this->listBox6);
-			this->panel1->Controls->Add(this->listBox5);
+		
 			this->panel1->Controls->Add(this->listBox4);
 			this->panel1->Controls->Add(this->listBox3);
 			this->panel1->Controls->Add(this->listBox2);
@@ -254,35 +396,59 @@ namespace PENSA {
 			this->listBox6->Location = System::Drawing::Point(0, 345);
 			this->listBox6->Name = L"listBox6";
 			this->listBox6->Size = System::Drawing::Size(530, 69);
-			this->listBox6->TabIndex = 5;
+		
 			// 
 			// listBox5
-			// 
-			this->listBox5->Dock = System::Windows::Forms::DockStyle::Top;
-			this->listBox5->FormattingEnabled = true;
-			this->listBox5->Location = System::Drawing::Point(0, 276);
-			this->listBox5->Name = L"listBox5";
-			this->listBox5->Size = System::Drawing::Size(530, 69);
-			this->listBox5->TabIndex = 4;
-			// 
-			// listBox4
-			// 
-			this->listBox4->Dock = System::Windows::Forms::DockStyle::Top;
-			this->listBox4->FormattingEnabled = true;
-			this->listBox4->Location = System::Drawing::Point(0, 207);
-			this->listBox4->Name = L"listBox4";
-			this->listBox4->Size = System::Drawing::Size(530, 69);
-			this->listBox4->TabIndex = 3;
-			// 
-			// listBox3
-			// 
-			this->listBox3->Dock = System::Windows::Forms::DockStyle::Top;
-			this->listBox3->FormattingEnabled = true;
-			this->listBox3->Location = System::Drawing::Point(0, 138);
-			this->listBox3->Name = L"listBox3";
-			this->listBox3->Size = System::Drawing::Size(530, 69);
-			this->listBox3->TabIndex = 2;
-			// 
+			txtCarrera->Text = dgvMaterias->SelectedRows[0]->Cells["carrera_materia"]->Value->ToString();
+		}
+	}
+	private: System::Void Form1_Load(System::Object^ sender, System::EventArgs^ e) 
+	{
+
+		String^ query = "SELECT * FROM sistemas";
+
+		conn = gcnew SqlConnection("Data Source=JAGC-PC;Initial Catalog=pensa;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+
+		try
+		{
+			conn->Open();
+			cmd = gcnew SqlCommand(query, conn);
+
+			adapter = gcnew SqlDataAdapter(cmd);
+
+			adapter->Fill(dt);
+			dgvMaterias->DataSource = dt;
+			conn->Close();
+		}
+		catch (Exception^ ex)
+		{
+			MessageBox::Show(ex->Message);
+		}
+		btnInsertar->Enabled = false;
+
+	}
+	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) 
+	{
+
+		DataView^ dv = gcnew DataView(dt);
+		dv->RowFilter = "nombre_materia LIKE '%" + textBox1->Text + "%' OR codigo_materia LIKE '%" + textBox1->Text + "%'";
+		dgvMaterias->DataSource = dv;
+
+	}
+
+
+
+
+
+private: System::Void myUserControl11_MouseEnter(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void myUserControl11_MouseLeave(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void myUserControl11_MouseClick(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e) {
+}
+
+};
+}			// 
 			// listBox2
 			// 
 			this->listBox2->Dock = System::Windows::Forms::DockStyle::Top;
@@ -345,8 +511,8 @@ namespace PENSA {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1264, 681);
-			this->Controls->Add(this->label1);
+<<<<<<<<< Temporary merge branch 1
+			this->ClientSize = System::Drawing::Size(1326, 570);
 			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->txtCarrera);
@@ -379,7 +545,26 @@ namespace PENSA {
 	private: System::Void btnInsertar_Click(System::Object^ sender, System::EventArgs^ e)
 	{
 
-		
+		String^ query = "SELECT * FROM sistemas";
+
+		conn = gcnew SqlConnection("Data Source=JAGC-PC;Initial Catalog=pensa;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+
+>>>>>>>>> Temporary merge branch 2
+		try
+		{
+			conn->Open();
+			cmd = gcnew SqlCommand(query, conn);
+<<<<<<<<< Temporary merge branch 1
+			adapter = gcnew SqlDataAdapter(cmd);
+			adapter->Fill(dt);
+			dgvMaterias->DataSource = dt;
+			conn->Close();
+		}
+		catch (Exception^ x)
+		{
+			MessageBox::Show(x->Message);
+		}
+		btnInsertar->Enabled = false;
 	}
 
 	private: System::Void dgvMaterias_SelectionChanged(System::Object^ sender, System::EventArgs^ e)
@@ -398,56 +583,30 @@ namespace PENSA {
 		{
 			txtMateria->Text = dgvMaterias->SelectedRows[0]->Cells["nombre_materia"]->Value->ToString();
 		}
-		
+
 		if (dgvMaterias->SelectedRows->Count > 0)
 		{
-			txtCarrera->Text = dgvMaterias->SelectedRows[0]->Cells["carrera_materia"]->Value->ToString();
+			txtCarrera->Text = dgvMaterias->SelectedRows[0]->Cells["carrera"]->Value->ToString();
 		}
 	}
-	private: System::Void Form1_Load(System::Object^ sender, System::EventArgs^ e) 
-	{
-
-		String^ query = "SELECT * FROM sistemas";
-
-		conn = gcnew SqlConnection("Data Source=JAGC-PC;Initial Catalog=pensa;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-
-		try
-		{
-			conn->Open();
-			cmd = gcnew SqlCommand(query, conn);
+	};
+}
+=========
 
 			adapter = gcnew SqlDataAdapter(cmd);
 
 			adapter->Fill(dt);
-			dgvMaterias->DataSource = dt;
+			dataGridView1->DataSource = dt;
+
 			conn->Close();
 		}
 		catch (Exception^ ex)
 		{
 			MessageBox::Show(ex->Message);
 		}
-		btnInsertar->Enabled = false;
+		button1->Enabled = false;
 
 	}
-	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) 
-	{
-
-		DataView^ dv = gcnew DataView(dt);
-		dv->RowFilter = "nombre_materia LIKE '%" + textBox1->Text + "%' OR codigo_materia LIKE '%" + textBox1->Text + "%'";
-		dgvMaterias->DataSource = dv;
-
-	}
-
-
-
-
-
-private: System::Void myUserControl11_MouseEnter(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void myUserControl11_MouseLeave(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void myUserControl11_MouseClick(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e) {
-}
-
 };
 }
+>>>>>>>>> Temporary merge branch 2
