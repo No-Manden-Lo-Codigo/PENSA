@@ -49,6 +49,8 @@ namespace PENSA {
 
 	protected:
 
+	protected:
+
 
 
 
@@ -93,27 +95,23 @@ namespace PENSA {
 			// 
 			// myUserControl11
 			// 
-			this->myUserControl11->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->myUserControl11->Angle = 345;
-			this->myUserControl11->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->myUserControl11->Angle = 7;
+			this->myUserControl11->BackColor = System::Drawing::Color::Transparent;
 			this->myUserControl11->BorderRadius = 1;
-			this->myUserControl11->Color0 = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
-				static_cast<System::Int32>(static_cast<System::Byte>(128)));
-			this->myUserControl11->Color1 = System::Drawing::Color::Silver;
+			this->myUserControl11->Color0 = System::Drawing::Color::IndianRed;
+			this->myUserControl11->Color1 = System::Drawing::Color::DimGray;
 			this->myUserControl11->ForeColor = System::Drawing::Color::White;
 			this->myUserControl11->Location = System::Drawing::Point(0, 0);
 			this->myUserControl11->Name = L"myUserControl11";
-			this->myUserControl11->Size = System::Drawing::Size(1200, 600);
+			this->myUserControl11->Size = System::Drawing::Size(1264, 681);
 			this->myUserControl11->TabIndex = 0;
+			this->myUserControl11->Load += gcnew System::EventHandler(this, &Form1::myUserControl11_Load);
 			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1184, 591);
+			this->ClientSize = System::Drawing::Size(1248, 642);
 			this->Controls->Add(this->myUserControl11);
 			this->Name = L"Form1";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
@@ -134,5 +132,8 @@ namespace PENSA {
 	}
 
 
-	};
+
+	private: System::Void myUserControl11_Load(System::Object^ sender, System::EventArgs^ e) {
+	}
+};
 }
