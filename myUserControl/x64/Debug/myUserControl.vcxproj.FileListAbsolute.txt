@@ -3,4 +3,5 @@ C:\Users\Jose\Desktop\INTEC\Visual Studio and Code\myUserControl\x64\Debug\myUse
 C:\Users\Jose\Desktop\INTEC\Visual Studio and Code\myUserControl\x64\Debug\myUserControl.vcxproj.GenerateResource.cache
 C:\Users\Jose\Desktop\INTEC\Visual Studio and Code\PENSA PROJECT\myUserControl\x64\Debug\myUserControl.vcxproj.AssemblyReference.cache
 C:\Users\Jose\Desktop\INTEC\Visual Studio and Code\PENSA PROJECT\myUserControl\x64\Debug\myUserControl.MyUserControl1.resources
+C:\Users\Jose\Desktop\INTEC\Visual Studio and Code\PENSA PROJECT\myUserControl\x64\Debug\myUserControl.MyUserControl2.resources
 C:\Users\Jose\Desktop\INTEC\Visual Studio and Code\PENSA PROJECT\myUserControl\x64\Debug\myUserControl.vcxproj.GenerateResource.cache

@@ -1,2 +1,9 @@
-﻿  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+﻿  pch.cpp
+  AssemblyInfo.cpp
+  myUserControl.cpp
+  MyUserControl1.cpp
+  MyUserControl2.cpp
+  Generating Code...
+  .NETFramework,Version=v4.8.AssemblyAttributes.cpp
+  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   myUserControl.vcxproj -> C:\Users\Jose\Desktop\INTEC\Visual Studio and Code\PENSA PROJECT\PENSA\x64\Debug\myUserControl.dll
