@@ -54,7 +54,7 @@ namespace myUserControl {
 	private: System::Windows::Forms::Button^ btnIngresar;
 
 
-
+	public:event EventHandler^ EsconderControl;
 
 	protected:
 
@@ -120,7 +120,7 @@ namespace myUserControl {
 			this->panel1->Controls->Add(this->label1);
 			this->panel1->Controls->Add(this->textBox1);
 			this->panel1->Controls->Add(this->label4);
-			this->panel1->Location = System::Drawing::Point(75, 75);
+			this->panel1->Location = System::Drawing::Point(360, 136);
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(500, 400);
 			this->panel1->TabIndex = 3;
@@ -216,13 +216,14 @@ namespace myUserControl {
 			// 
 			// MyUserControl2
 			// 
+			this->AccessibleName = L"calendar";
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::AppWorkspace;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->Controls->Add(this->panel1);
 			this->Name = L"MyUserControl2";
-			this->Size = System::Drawing::Size(650, 557);
+			this->Size = System::Drawing::Size(1264, 681);
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
 			this->ResumeLayout(false);
@@ -241,12 +242,17 @@ namespace myUserControl {
 		info[2] = Convert::ToString(comboBox1->SelectedItem);
 		info[3] = Convert::ToString(22);
 
-		MessageBox::Show(info[0] + "\n" + info[1] + "\n" + info[2] + "\n" + info[3]);
+		//MessageBox::Show(info[0] + "\n" + info[1] + "\n" + info[2] + "\n" + info[3]);
 
+		Esconder();
+		
 	}
 
-
-
+	void Esconder()
+	{
+		EsconderControl(this, EventArgs::Empty);
+	}
+	
 	private: System::Void textBox1_KeyDown(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e)
 	{
 

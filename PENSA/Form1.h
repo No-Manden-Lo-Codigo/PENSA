@@ -12,6 +12,7 @@ using namespace System::Data;
 using namespace System::Drawing;
 using namespace System::Data::SqlClient;
 using namespace std;
+using namespace myUserControl;
 
 namespace PENSA {
 
@@ -44,6 +45,9 @@ namespace PENSA {
 				delete components;
 			}
 		}
+	private: myUserControl::MyUserControl2^ myUserControl21;
+	private: myUserControl::MyUserControl1^ myUserControl11;
+	protected:
 
 	protected:
 
@@ -95,7 +99,39 @@ namespace PENSA {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Form1::typeid));
+			this->myUserControl21 = (gcnew myUserControl::MyUserControl2());
+			this->myUserControl11 = (gcnew myUserControl::MyUserControl1());
 			this->SuspendLayout();
+			// 
+			// myUserControl21
+			// 
+			this->myUserControl21->AccessibleName = L"calendar";
+			this->myUserControl21->BackColor = System::Drawing::SystemColors::AppWorkspace;
+			this->myUserControl21->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"myUserControl21.BackgroundImage")));
+			this->myUserControl21->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->myUserControl21->Location = System::Drawing::Point(0, 0);
+			this->myUserControl21->MaximumSize = System::Drawing::Size(1264, 681);
+			this->myUserControl21->MinimumSize = System::Drawing::Size(1264, 681);
+			this->myUserControl21->Name = L"myUserControl21";
+			this->myUserControl21->Size = System::Drawing::Size(1264, 681);
+			this->myUserControl21->TabIndex = 0;
+			this->myUserControl21->EsconderControl += gcnew System::EventHandler(this, &PENSA::Form1::EsconderForm);
+			// 
+			// myUserControl11
+			// 
+			this->myUserControl11->Angle = 232;
+			this->myUserControl11->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->myUserControl11->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"myUserControl11.BackgroundImage")));
+			this->myUserControl11->BorderRadius = 1;
+			this->myUserControl11->Color0 = System::Drawing::Color::Transparent;
+			this->myUserControl11->Color1 = System::Drawing::Color::Transparent;
+			this->myUserControl11->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->myUserControl11->ForeColor = System::Drawing::Color::White;
+			this->myUserControl11->Location = System::Drawing::Point(0, 0);
+			this->myUserControl11->Name = L"myUserControl11";
+			this->myUserControl11->Size = System::Drawing::Size(1264, 681);
+			this->myUserControl11->TabIndex = 1;
 			// 
 			// Form1
 			// 
@@ -103,6 +139,8 @@ namespace PENSA {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::AppWorkspace;
 			this->ClientSize = System::Drawing::Size(1264, 681);
+			this->Controls->Add(this->myUserControl21);
+			this->Controls->Add(this->myUserControl11);
 			this->MaximumSize = System::Drawing::Size(1280, 720);
 			this->MinimumSize = System::Drawing::Size(1280, 720);
 			this->Name = L"Form1";
@@ -122,7 +160,14 @@ namespace PENSA {
 	}
 	private: System::Void myUserControl11_MouseClick(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e) {
 	}
-
+	
+	void EsconderForm(Object^ sender, EventArgs^ e)
+	{
+		myUserControl21->Hide();
+		myUserControl21->SendToBack();
+		myUserControl11->Show();
+		myUserControl11->BringToFront();
+	}
 
 
 	private: System::Void myUserControl11_Load(System::Object^ sender, System::EventArgs^ e) {
